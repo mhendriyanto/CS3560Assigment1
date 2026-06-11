@@ -55,7 +55,7 @@ public class SimulationDriver{
         int duplicateCount = Math.min(5, studentList.size());
         for(int i = 0; i < duplicateCount; i++){
             Student studentChangingVote = studentList.get(i);
-            //Change their answer
+            //Change their answer.
             generateRandomAnswerForStudent(studentChangingVote, choices, isMultiple);
             //Resubmit
             service.submitAnswer(studentChangingVote);

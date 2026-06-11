@@ -5,7 +5,7 @@ public class VotingService {
     private Question question;
     private List<Submission> submissionList;
 
-    //inner class to group a student's ID and their answers together.
+    //inner class to group a student's ID and their answers together
     private static class Submission{
         private final String studentId;
         private List<String> answers;

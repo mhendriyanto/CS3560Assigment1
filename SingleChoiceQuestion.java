@@ -6,7 +6,7 @@ public class SingleChoiceQuestion extends Question{
         super(questionText, candidateAnswers);
     }
 
-    //Override
+    @Override
     public boolean isValidSubmission(List<String> submission){
         //must choose exactly one option, and it must be a valid candiate answer
         if(submission == null || submission.size() != 1){

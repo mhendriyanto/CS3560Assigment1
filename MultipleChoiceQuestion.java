@@ -9,9 +9,9 @@ public class MultiplechoiceQuestion extends Question{
     //Override
     public boolean isValidSubmission(List<String> submission){
         if(submission == null || submission.isEmpty()){
-            return false;
+            return false; 
         }
-        //Every choice must be one of the configured answers
+        //Every choice must be one of the configured answers  
         for(String choice : submission){
             if(!getCandiateAnswer().contains(choice)){
                 return false
@@ -19,5 +19,4 @@ public class MultiplechoiceQuestion extends Question{
         }
         return true;
     }
-
 }
