@@ -17,7 +17,9 @@ public class SimulationDriver{
             singleOptions
         );
         votinService.configureQuestion(SingleChoiceQuestion);
-        simulateSubmissions(votinService, singleOptions, false, 25);
+        //Randomly generate between 15 and 50 students for this session
+        int randomStudentCount1 = rand.nextInt(26)+15;
+        simulateSubmissions(votinService, singleOptions, false, randomStudentCount1);
         votinService.displayResults();
 
         //Simulation 2: Multiple choice question (Select all that apply)
@@ -28,8 +30,9 @@ public class SimulationDriver{
             multiOptions
         );
         votinService.configureQuestion(multipleChoiceQuestion);
-        //Simulate 35 students, allowing multiple selections per students
-        simulateSubmissions(votinService, multiOptions, true, 35);
+        //Randomly generate between 15 to 50 students for second session
+        int randomStudentCount2 = rand.nextInt(36)+15;
+        simulateSubmissions(votinService, multiOptions, true, randomStudentCount2);
         votinService.displayResults();
     }
 

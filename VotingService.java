@@ -3,7 +3,7 @@ import java.util.List;
 
 public class VotingService {
     private Question question;
-    private List<Submission> submissionList;
+    private final List<Submission> submissionList;
 
     //inner class to group a student's ID and their answers together
     private static class Submission{
@@ -76,12 +76,12 @@ public class VotingService {
         }
 
         // Standard Output Print Header
-        System.out.println("\n--- POLL RESULTS (LIST-BASED) ---");
+        System.out.println("\nPOLL RESULTS");
         System.out.println("Question: " + question.getQuestionText());
         System.out.println("Total Unique Submissions: " + submissionList.size());
 
         // For each candidate answer, iterate through the submission list to calculate the count
-        for (String candidateOption : question.getCandidateAnswers()){
+        for (String candidateOption : question.getCandidateAnswer()){
             int currentOptionCount = 0;
             
             for (Submission sub : submissionList){

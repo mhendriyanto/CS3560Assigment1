@@ -12,6 +12,6 @@ public class SingleChoiceQuestion extends Question{
         if(submission == null || submission.size() != 1){
             return false;
         }
-        return getCandiateAnswer().contains(submission.get(0))
+        return getCandidateAnswer().contains(submission.get(0));
     }
 }
