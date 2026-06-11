@@ -75,7 +75,7 @@ public class VotingService {
             return;
         }
 
-        // Standard Output Print Header
+        // Standard Output Print Header.
         System.out.println("\nPOLL RESULTS");
         System.out.println("Question: " + question.getQuestionText());
         System.out.println("Total Unique Submissions: " + submissionList.size());
@@ -95,4 +95,3 @@ public class VotingService {
         System.out.println("\n");
     }
 }
-//

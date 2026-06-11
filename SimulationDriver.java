@@ -69,7 +69,7 @@ public class SimulationDriver{
     private static void generateRandomAnswerForStudent(Student student, List<String> choices, boolean isMultiple){
         List<String> chosen = new ArrayList<>();
         if(!isMultiple){
-            //Pick exactly one
+            //Pick exactly one.
             chosen.add(choices.get(rand.nextInt(choices.size())));
         }else{
             //Pick a random number of choices

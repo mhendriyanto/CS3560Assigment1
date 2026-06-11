@@ -1,6 +1,6 @@
 import java.util.List;
 
- //Represents a student participating in the poll
+ //Represents a student participating in the poll.
  //Holds a unique identifier and their chosen answers
 
 public class Student {

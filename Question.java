@@ -17,7 +17,7 @@ public abstract class Question{
         return candidateAnswers;
     }
 
-    //Method validates if a student submission matches the questions rules
+    //Method validates if a student submission matches the questions rules.
     //Overidden by subclasses to handle single vs multiple choice validation
     public abstract boolean isValidSubmission(List<String> submission);
 }

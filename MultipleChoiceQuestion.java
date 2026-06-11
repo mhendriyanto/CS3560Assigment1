@@ -11,7 +11,7 @@ public class MultipleChoiceQuestion extends Question{
         if(submission == null || submission.isEmpty()){
             return false; 
         }
-        //Every choice must be one of the configured answers  
+        //Every choice must be one of the configured answers.  
         for(String choice : submission){
             if(!getCandidateAnswer().contains(choice)){
                 return false;
